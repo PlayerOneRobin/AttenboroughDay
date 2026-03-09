@@ -1,0 +1,4 @@
+interface:
+  display_name: "Attenborough Day Page"
+  short_description: "Understand and modify this landing page."
+  default_prompt: "Use $attenborough-day-page to explain, restyle, or update the International Attenborough Day landing page in this workspace."
