@@ -90,11 +90,14 @@
     </section>
 
     <section class="scene scene-forest" id="forest" data-scene="forest">
-      <div class="scene-media">
-        <video class="scene-video deferred-video" autoplay muted loop playsinline preload="none">
-          <source
-            data-src="https://cdn.free-stock.video/23122023/scotland-outdoors-landscape-tree-nature-trees-forest-72515-full.mp4"
-            type="video/mp4" />
+      <div class="scene-media" data-ping-pong-group>
+        <video class="scene-video deferred-video ping-pong-video is-active" data-playback="ping-pong"
+          data-direction="forward" muted playsinline preload="auto">
+          <source data-src="assets/forest-forward.mp4" type="video/mp4" />
+        </video>
+        <video class="scene-video deferred-video ping-pong-video" data-playback="ping-pong" data-direction="reverse"
+          muted playsinline preload="auto" aria-hidden="true">
+          <source data-src="assets/forest-reverse.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="scene-overlay"></div>
@@ -147,11 +150,14 @@
     </section>
 
     <section class="scene scene-planet" id="planet" data-scene="planet">
-      <div class="scene-media">
-        <video class="scene-video deferred-video" autoplay muted loop playsinline preload="none">
-          <source
-            data-src="https://cdn.free-stock.video/192021/space-space-space-earth-running-blue-planet-blue-planet-17712-full.mp4"
-            type="video/mp4" />
+      <div class="scene-media" data-ping-pong-group>
+        <video class="scene-video deferred-video ping-pong-video is-active" data-playback="ping-pong"
+          data-direction="forward" muted playsinline preload="auto">
+          <source data-src="assets/planet-forward.mp4" type="video/mp4" />
+        </video>
+        <video class="scene-video deferred-video ping-pong-video" data-playback="ping-pong" data-direction="reverse"
+          muted playsinline preload="auto" aria-hidden="true">
+          <source data-src="assets/planet-reverse.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="scene-overlay"></div>
@@ -165,7 +171,7 @@
       </div>
     </section>
 
-    <section class="practical-section practical-section-light" id="celebrate">
+    <section class="practical-section practical-section-light" id="celebrate" data-snap="force">
       <div class="section-heading">
         <p class="eyebrow">How to celebrate</p>
         <h2>Five ways to mark the day</h2>
